@@ -65,6 +65,26 @@
 
 @media screen and (max-width: 900px) {
   .sidebar {
+    
+    width: 10%;
+    left: -100px;
+    transition: slide 0.4s ease;
+    
+  }
+
+  .smallSidebar{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    
+
+  }
+
+  .sideLink p{
+
     display: none;
   }
 }

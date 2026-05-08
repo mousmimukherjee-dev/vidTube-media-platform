@@ -14,12 +14,17 @@ import tom from "../../assets/tom.png"
 import megan from "../../assets/megan.png"
 import cameron from "../../assets/cameron.png"
 
-export const Sidebar=({sidebar,category , setCategory})=>{
+export const Sidebar=({sidebar,setSidebar, category , setCategory})=>{
 
+
+const handelSidebar=()=>{
+
+  setSidebar(true)
+}
 
   return(
 
-    <div className={`${styles.sidebar} ${sidebar ? "" : styles.smallSidebar}`}>
+    <div className={`${styles.sidebar} ${sidebar ? "" : styles.smallSidebar}`} onClick={handelSidebar}>
      
      <div className={styles.sortcutLinks}>
       <div className={`${styles.sideLink} ${category === 0 ? styles.active : ""}`} onClick={()=>setCategory(0)}>

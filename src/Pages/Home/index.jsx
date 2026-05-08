@@ -2,14 +2,14 @@ import { useState } from "react"
 import { Feed } from "../../Components/Feed"
 import { Sidebar } from "../../Components/Sidebar"
 import styles from "./home.module.css"
-export const Home=({sidebar})=>{
+export const Home=({sidebar, setSidebar})=>{
 
   const [category , setCategory] = useState(0)
 
   return(
 
     <>
-    <Sidebar sidebar={sidebar} category={category} setCategory={setCategory}/>
+    <Sidebar sidebar={sidebar} category={category} setCategory={setCategory} setSidebar={setSidebar}/>
     <div className={`${styles.container} ${sidebar ? "" : styles.largeContainer}`}>
       <Feed category={category} setCategory={setCategory}/>
 

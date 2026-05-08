@@ -93,8 +93,16 @@ nav{
 
   .menuIcon{
 
-    display: none;
+    display: block;
+    position: relative;
   }
+
+  .navLeft .logo{
+
+    width: 100px;
+  }
+
+
 
   .navRight img{
 
