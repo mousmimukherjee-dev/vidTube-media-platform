@@ -18,7 +18,7 @@ function App() {
     <>
     
     <Routes>
-      <Route element={ <Layout />}>
+      <Route element={ <Layout sidebar={sidebar} setSidebar={setSidebar}/>}>
       <Route path="/" element={ <Home  sidebar={sidebar}/>}/>
       <Route path="/search/:query" element={ <Search />}/>
       <Route path="/searchvedio/:query/:videoId" element={<SearchVedio />}/>

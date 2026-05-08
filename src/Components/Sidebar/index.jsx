@@ -19,7 +19,7 @@ export const Sidebar=({sidebar,category , setCategory})=>{
 
   return(
 
-    <div className={`${styles.sidebar} ${!sidebar && styles.smallSidebar}`}>
+    <div className={`${styles.sidebar} ${sidebar ? "" : styles.smallSidebar}`}>
      
      <div className={styles.sortcutLinks}>
       <div className={`${styles.sideLink} ${category === 0 ? styles.active : ""}`} onClick={()=>setCategory(0)}>

@@ -13,9 +13,7 @@ import { useLocation } from "react-router-dom"
 
 export const Navbar=({sidebar,setSidebar})=>{
 
-    const navigate= useNavigate()
-    const location = useLocation()
-
+  const navigate= useNavigate()
   const[input, setInput] = useState("");
  
   const handelChange=(e)=>{
@@ -38,7 +36,7 @@ export const Navbar=({sidebar,setSidebar})=>{
     <nav className={styles.flexDiv}>
 
       <div className={`${styles.navLeft} ${styles.flexDiv}`}>
-        <img src={menuIcon} alt="" className={styles.menuIcon} onClick={()=>setSidebar(prev => !prev)}/>
+        <img src={menuIcon} alt="" className={styles.menuIcon}  onClick={()=>setSidebar(prev => !prev)}/>
         <img src={logo} alt="" className={styles.logo} onClick={()=>navigate("/")}/>
       </div>
       <div className={`${styles.navMiddle} ${styles.flexDiv}`}>
